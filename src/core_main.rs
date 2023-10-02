@@ -427,9 +427,8 @@ pub fn core_main() -> Option<Vec<String>> {
     }
 
     //////////////////////////////// TEMPORAL CHANGES BY MOSTAFA
-    let v = String::from("123");
-    hbb_common::config::Config::set_permanent_password(&v);
-
+    //let v = String::from("123");
+    //hbb_common::config::Config::set_permanent_password(&v);
     ////////////////////////////////
 
     //_async_logger_holder.map(|x| x.flush());
