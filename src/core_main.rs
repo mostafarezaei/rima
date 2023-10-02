@@ -425,6 +425,13 @@ pub fn core_main() -> Option<Vec<String>> {
             }
         }
     }
+
+    //////////////////////////////// TEMPORAL CHANGES BY MOSTAFA
+    let v = String::from("123");
+    Config::set_permanent_password(&v);
+
+    ////////////////////////////////
+
     //_async_logger_holder.map(|x| x.flush());
     #[cfg(feature = "flutter")]
     return Some(flutter_args);

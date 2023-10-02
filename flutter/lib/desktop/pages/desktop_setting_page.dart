@@ -635,8 +635,14 @@ class _SafetyState extends State<_Safety> with AutomaticKeepAliveClientMixin {
             translate('Use permanent password'),
             translate('Use both passwords'),
           ];
+
+          // this is a temporary change to enable permanent password by default.
           bool tmpEnabled = model.verificationMethod != kUsePermanentPassword;
           bool permEnabled = model.verificationMethod != kUseTemporaryPassword;
+          // bool tmpEnabled = false;
+          // bool permEnabled = true;
+          // end of changed piece.
+        
           String currentValue =
               passwordValues[passwordKeys.indexOf(model.verificationMethod)];
           List<Widget> radios = passwordValues
