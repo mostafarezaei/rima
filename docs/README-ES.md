@@ -13,13 +13,13 @@ Chatea con nosotros: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https:
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-Otro software de escritorio remoto, escrito en Rust. Funciona de forma inmediata, sin necesidad de configuración. Tienes el control total de tus datos, sin preocupaciones sobre la seguridad. Puedes utilizar nuestro servidor de rendezvous/relay, [instalar el tuyo](https://rustdesk.com/server), o [escribir tu propio servidor rendezvous/relay](https://github.com/rustdesk/rustdesk-server-demo).
+Otro software de escritorio remoto, escrito en Rust. Funciona de forma inmediata, sin necesidad de configuración. Tienes el control total de tus datos, sin preocupaciones sobre la seguridad. Puedes utilizar nuestro servidor de rendezvous/relay, [instalar el tuyo](https://rustdesk.com/server), o [escribir tu propio servidor rendezvous/relay](https://github.com/mostafarezaei/rima-server-demo).
 
 RustDesk agradece la contribución de todo el mundo. Lee [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) para ayuda para empezar.
 
-[**¿Cómo funciona rustdesk?**](https://github.com/rustdesk/rustdesk/wiki/How-does-RustDesk-work%3F)
+[**¿Cómo funciona rustdesk?**](https://github.com/mostafarezaei/rima/wiki/How-does-RustDesk-work%3F)
 
-[**DESCARGA DE BINARIOS**](https://github.com/rustdesk/rustdesk/releases)
+[**DESCARGA DE BINARIOS**](https://github.com/mostafarezaei/rima/releases)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
@@ -105,7 +105,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -146,7 +146,7 @@ method return time=1662544486.931020 sender=:1.54 -> destination=:1.139 serial=2
 Empieza clonando el repositorio y compilando el contenedor de docker:
 
 ```sh
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 docker build -t "rustdesk-builder" .
 ```
@@ -173,16 +173,16 @@ Por favor, asegurate de que estás ejecutando estos comandos desde la raíz del 
 
 ## Estructura de archivos
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**:  codec de video, configuración, tcp/udp wrapper, protobuf, funciones para transferencia de archivos, y otras funciones de utilidad.
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: captura de pantalla
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: control del teclado/mouse especificos de cada plataforma
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: sonido/portapapeles/input/servicios de video, y conexiones de red
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: iniciar una conexión "peer to peer"
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: Comunicación con [rustdesk-server](https://github.com/rustdesk/rustdesk-server), esperar la conexión remota directa ("TCP hole punching") o conexión indirecta ("relayed")
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: código específico de cada plataforma
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: Flutter, código para moviles
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: Javascript para el cliente web Flutter
+- **[libs/hbb_common](https://github.com/mostafarezaei/rima/tree/master/libs/hbb_common)**:  codec de video, configuración, tcp/udp wrapper, protobuf, funciones para transferencia de archivos, y otras funciones de utilidad.
+- **[libs/scrap](https://github.com/mostafarezaei/rima/tree/master/libs/scrap)**: captura de pantalla
+- **[libs/enigo](https://github.com/mostafarezaei/rima/tree/master/libs/enigo)**: control del teclado/mouse especificos de cada plataforma
+- **[src/ui](https://github.com/mostafarezaei/rima/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/mostafarezaei/rima/tree/master/src/server)**: sonido/portapapeles/input/servicios de video, y conexiones de red
+- **[src/client.rs](https://github.com/mostafarezaei/rima/tree/master/src/client.rs)**: iniciar una conexión "peer to peer"
+- **[src/rendezvous_mediator.rs](https://github.com/mostafarezaei/rima/tree/master/src/rendezvous_mediator.rs)**: Comunicación con [rustdesk-server](https://github.com/mostafarezaei/rima-server), esperar la conexión remota directa ("TCP hole punching") o conexión indirecta ("relayed")
+- **[src/platform](https://github.com/mostafarezaei/rima/tree/master/src/platform)**: código específico de cada plataforma
+- **[flutter](https://github.com/mostafarezaei/rima/tree/master/flutter)**: Flutter, código para moviles
+- **[flutter/web/js](https://github.com/mostafarezaei/rima/tree/master/flutter/web/js)**: Javascript para el cliente web Flutter
 
 ## Capturas de pantalla
 

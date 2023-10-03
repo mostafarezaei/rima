@@ -1244,7 +1244,7 @@ impl<T: InvokeUiSession> Remote<T> {
                     }
                     Some(misc::Union::PermissionInfo(p)) => {
                         log::info!("Change permission {:?} -> {}", p.permission, p.enabled);
-                        // https://github.com/rustdesk/rustdesk/issues/3703#issuecomment-1474734754
+                        // https://github.com/mostafarezaei/rima/issues/3703#issuecomment-1474734754
                         match p.permission.enum_value() {
                             Ok(Permission::Keyboard) => {
                                 #[cfg(feature = "flutter")]

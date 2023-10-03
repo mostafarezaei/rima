@@ -6,7 +6,7 @@
   <a href="#struttura-dei-file">Struttura</a> •
   <a href="#screenshots">Schermate</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-VN.md">Tiếng Việt</a>] | [<a href="README-GR.md">Ελληνικά</a>]<br>
-  <b>Abbiamo bisogno del tuo aiuto per tradurre questo file README e la <a href="https://github.com/rustdesk/rustdesk/tree/master/src/lang">UI RustDesk</a> nella tua lingua nativa</b>
+  <b>Abbiamo bisogno del tuo aiuto per tradurre questo file README e la <a href="https://github.com/mostafarezaei/rima/tree/master/src/lang">UI RustDesk</a> nella tua lingua nativa</b>
 </p>
 
 Chatta con noi su: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/rustdesk) | [Reddit](https://www.reddit.com/r/rustdesk)
@@ -15,12 +15,12 @@ Chatta con noi su: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://
 
 Ancora un altro software per il controllo remoto del desktop, scritto in Rust. 
 Funziona immediatamente, nessuna configurazione richiesta. Hai il pieno controllo dei tuoi dati, senza preoccupazioni per la sicurezza. 
-Puoi usare il nostro server rendezvous/relay, [configurare il tuo server](https://rustdesk.com/server) o [realizzare il tuo server rendezvous/relay](https://github.com/rustdesk/rustdesk-server-demo).
+Puoi usare il nostro server rendezvous/relay, [configurare il tuo server](https://rustdesk.com/server) o [realizzare il tuo server rendezvous/relay](https://github.com/mostafarezaei/rima-server-demo).
 
 RustDesk accoglie il contributo di tutti. 
 Per ulteriori informazioni su come iniziare a contribuire, vedi [`docs/CONTRIBUTING-IT.md`](CONTRIBUTING.md).
 
-[**DOWNLOAD PROGRAMMA**](https://github.com/rustdesk/rustdesk/releases)
+[**DOWNLOAD PROGRAMMA**](https://github.com/mostafarezaei/rima/releases)
 
 ## Server pubblici gratuiti
 
@@ -101,7 +101,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -119,7 +119,7 @@ Controlla [qui](https://docs.fedoraproject.org/en-US/quick-docs/configuring-xorg
 Clona il repository e compila i container docker:
 
 ```sh
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 docker build -t "rustdesk-builder" .
 ```
@@ -150,14 +150,14 @@ Nota inoltre che altri sottocomandi cargo come `install` o `run` non sono attual
 
 ## Struttura dei file
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: codec video, config, wrapper tcp/udp, protobuf, funzioni per il trasferimento file, e altre funzioni utili.
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: cattura dello schermo
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: controllo tastiera/mouse specifico della piattaforma
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: servizi audio/appunti/input/video e connessioni di rete
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: avvio di una connessione peer
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: Comunica con [rustdesk-server](https://github.com/rustdesk/rustdesk-server), attende la connessione remota diretta (TCP hole punching) oppure indiretta (relayed)
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: codice specifico della piattaforma
+- **[libs/hbb_common](https://github.com/mostafarezaei/rima/tree/master/libs/hbb_common)**: codec video, config, wrapper tcp/udp, protobuf, funzioni per il trasferimento file, e altre funzioni utili.
+- **[libs/scrap](https://github.com/mostafarezaei/rima/tree/master/libs/scrap)**: cattura dello schermo
+- **[libs/enigo](https://github.com/mostafarezaei/rima/tree/master/libs/enigo)**: controllo tastiera/mouse specifico della piattaforma
+- **[src/ui](https://github.com/mostafarezaei/rima/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/mostafarezaei/rima/tree/master/src/server)**: servizi audio/appunti/input/video e connessioni di rete
+- **[src/client.rs](https://github.com/mostafarezaei/rima/tree/master/src/client.rs)**: avvio di una connessione peer
+- **[src/rendezvous_mediator.rs](https://github.com/mostafarezaei/rima/tree/master/src/rendezvous_mediator.rs)**: Comunica con [rustdesk-server](https://github.com/mostafarezaei/rima-server), attende la connessione remota diretta (TCP hole punching) oppure indiretta (relayed)
+- **[src/platform](https://github.com/mostafarezaei/rima/tree/master/src/platform)**: codice specifico della piattaforma
 
 ## Schermate
 

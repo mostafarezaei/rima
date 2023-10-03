@@ -14,15 +14,15 @@ Chat with us: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitt
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-Rust로 작성되었고, 설정없이 바로 사용할 수 있는 원격 데스트탑 소프트웨어입니다. 자신의 데이터를 완전히 컨트롤할 수 있고, 보안의 염려도 없습니다. 우리의 rendezvous/relay 서버를 사용해도, [스스로 설정](https://rustdesk.com/server)하는 것도, [스스로 rendezvous/relay 서버를 작성할 수도 있습니다](https://github.com/rustdesk/rustdesk-server-demo).
+Rust로 작성되었고, 설정없이 바로 사용할 수 있는 원격 데스트탑 소프트웨어입니다. 자신의 데이터를 완전히 컨트롤할 수 있고, 보안의 염려도 없습니다. 우리의 rendezvous/relay 서버를 사용해도, [스스로 설정](https://rustdesk.com/server)하는 것도, [스스로 rendezvous/relay 서버를 작성할 수도 있습니다](https://github.com/mostafarezaei/rima-server-demo).
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
 RustDesk는 모든 기여를 환영합니다. 기여하고자 한다면 [`docs/CONTRIBUTING.md`](CONTRIBUTING.md)를 참조해주세요.
 
-[**RustDesk는 어떻게 작동하는가?**](https://github.com/rustdesk/rustdesk/wiki/How-does-RustDesk-work%3F)
+[**RustDesk는 어떻게 작동하는가?**](https://github.com/mostafarezaei/rima/wiki/How-does-RustDesk-work%3F)
 
-[**BINARY DOWNLOAD**](https://github.com/rustdesk/rustdesk/releases)
+[**BINARY DOWNLOAD**](https://github.com/mostafarezaei/rima/releases)
 
 ## 무료 퍼블릭 서버
 
@@ -104,7 +104,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -121,7 +121,7 @@ RustDesk는 Wayland를 지원하지 않습니다. [링크](https://docs.fedorapr
 레포지토리를 클론하고, Docker 컨테이너 구성하는 것으로 시작합니다.
 
 ```sh
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 docker build -t "rustdesk-builder" .
 ```
@@ -148,16 +148,16 @@ target/release/rustdesk
 
 ## File Structure
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: 비디오 코덱, 설정, tcp/udp 랩퍼, protobuf, 파일 전송을 위한 fs 함수, 그 외 유틸리티 함수
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: 화면 캡처
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: 플랫폼 고유 키보드/마우스 컨트롤
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: 오디오, 클립보드, 입력, 비디오 서비스 그리고 네트워크 연결
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: 피어 접속 시작
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: [rustdesk-server](https://github.com/rustdesk/rustdesk-server)와 통신해서 리모트 다이렉트(TCP hole punching) 혹은 relayed 접속
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: 플랫폼 고유의 코드
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: Flutter code for mobile
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: Javascript for Flutter web client
+- **[libs/hbb_common](https://github.com/mostafarezaei/rima/tree/master/libs/hbb_common)**: 비디오 코덱, 설정, tcp/udp 랩퍼, protobuf, 파일 전송을 위한 fs 함수, 그 외 유틸리티 함수
+- **[libs/scrap](https://github.com/mostafarezaei/rima/tree/master/libs/scrap)**: 화면 캡처
+- **[libs/enigo](https://github.com/mostafarezaei/rima/tree/master/libs/enigo)**: 플랫폼 고유 키보드/마우스 컨트롤
+- **[src/ui](https://github.com/mostafarezaei/rima/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/mostafarezaei/rima/tree/master/src/server)**: 오디오, 클립보드, 입력, 비디오 서비스 그리고 네트워크 연결
+- **[src/client.rs](https://github.com/mostafarezaei/rima/tree/master/src/client.rs)**: 피어 접속 시작
+- **[src/rendezvous_mediator.rs](https://github.com/mostafarezaei/rima/tree/master/src/rendezvous_mediator.rs)**: [rustdesk-server](https://github.com/mostafarezaei/rima-server)와 통신해서 리모트 다이렉트(TCP hole punching) 혹은 relayed 접속
+- **[src/platform](https://github.com/mostafarezaei/rima/tree/master/src/platform)**: 플랫폼 고유의 코드
+- **[flutter](https://github.com/mostafarezaei/rima/tree/master/flutter)**: Flutter code for mobile
+- **[flutter/web/js](https://github.com/mostafarezaei/rima/tree/master/flutter/web/js)**: Javascript for Flutter web client
 
 ## Snapshot
 

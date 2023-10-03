@@ -14,17 +14,17 @@ Chat with us: [知乎](https://www.zhihu.com/people/rustdesk) | [Discord](https:
 
 远程桌面软件，开箱即用，无需任何配置。您完全掌控数据，不用担心安全问题。您可以使用我们的注册/中继服务器，
 或者[自己设置](https://rustdesk.com/server)，
-亦或者[开发您的版本](https://github.com/rustdesk/rustdesk-server-demo)。
+亦或者[开发您的版本](https://github.com/mostafarezaei/rima-server-demo)。
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
 RustDesk 期待各位的贡献. 如何参与开发? 详情请看 [CONTRIBUTING.md](docs/CONTRIBUTING.md).
 
-[**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
+[**FAQ**](https://github.com/mostafarezaei/rima/wiki/FAQ)
 
-[**BINARY DOWNLOAD**](https://github.com/rustdesk/rustdesk/releases)
+[**BINARY DOWNLOAD**](https://github.com/mostafarezaei/rima/releases)
 
-[**NIGHTLY BUILD**](https://github.com/rustdesk/rustdesk/releases/tag/nightly)
+[**NIGHTLY BUILD**](https://github.com/mostafarezaei/rima/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
@@ -41,7 +41,7 @@ RustDesk 期待各位的贡献. 如何参与开发? 详情请看 [CONTRIBUTING.m
 
 ## Dev Container
 
-[![在 Dev Containers 中打开](https://img.shields.io/static/v1?label=Dev%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/rustdesk/rustdesk)
+[![在 Dev Containers 中打开](https://img.shields.io/static/v1?label=Dev%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/mostafarezaei/rima)
 
 如果你已经安装了 VS Code 和 Docker, 你可以点击上面的徽章开始使用. 点击后, VS Code 将自动安装 Dev Containers 扩展（如果需要），将源代码克隆到容器卷中, 并启动一个 Dev 容器供使用.
 
@@ -126,7 +126,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -172,7 +172,7 @@ method return time=1662544486.931020 sender=:1.54 -> destination=:1.139 serial=2
 克隆版本库并构建 Docker 容器:
 
 ```sh
-git clone https://github.com/rustdesk/rustdesk # 克隆Github存储库
+git clone https://github.com/mostafarezaei/rima # 克隆Github存储库
 cd rustdesk # 进入文件夹
 docker build -t "rustdesk-builder" . # 构建容器
 ```
@@ -254,16 +254,16 @@ target/release/rustdesk
 
 ## 文件结构
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: 视频编解码, 配置, tcp/udp 封装, protobuf, 文件传输相关文件系统操作函数, 以及一些其他实用函数
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: 屏幕截取
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: 平台相关的鼠标键盘输入
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: 被控端服务音频、剪切板、输入、视频服务、网络连接的实现
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: 控制端
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: 与[rustdesk-server](https://github.com/rustdesk/rustdesk-server)保持UDP通讯, 等待远程连接（通过打洞直连或者中继）
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: 平台服务相关代码
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: 移动版本的Flutter代码 
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: Flutter Web版本中的Javascript代码
+- **[libs/hbb_common](https://github.com/mostafarezaei/rima/tree/master/libs/hbb_common)**: 视频编解码, 配置, tcp/udp 封装, protobuf, 文件传输相关文件系统操作函数, 以及一些其他实用函数
+- **[libs/scrap](https://github.com/mostafarezaei/rima/tree/master/libs/scrap)**: 屏幕截取
+- **[libs/enigo](https://github.com/mostafarezaei/rima/tree/master/libs/enigo)**: 平台相关的鼠标键盘输入
+- **[src/ui](https://github.com/mostafarezaei/rima/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/mostafarezaei/rima/tree/master/src/server)**: 被控端服务音频、剪切板、输入、视频服务、网络连接的实现
+- **[src/client.rs](https://github.com/mostafarezaei/rima/tree/master/src/client.rs)**: 控制端
+- **[src/rendezvous_mediator.rs](https://github.com/mostafarezaei/rima/tree/master/src/rendezvous_mediator.rs)**: 与[rustdesk-server](https://github.com/mostafarezaei/rima-server)保持UDP通讯, 等待远程连接（通过打洞直连或者中继）
+- **[src/platform](https://github.com/mostafarezaei/rima/tree/master/src/platform)**: 平台服务相关代码
+- **[flutter](https://github.com/mostafarezaei/rima/tree/master/flutter)**: 移动版本的Flutter代码 
+- **[flutter/web/js](https://github.com/mostafarezaei/rima/tree/master/flutter/web/js)**: Flutter Web版本中的Javascript代码
 
 ## 截图
 

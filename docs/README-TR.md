@@ -7,24 +7,24 @@
   <a href="#file-structure">Dosya Yapısı</a> •
   <a href="#snapshot">Ekran Görüntüleri</a><br>
   [<a href="docs/README-UA.md">Українська</a>] | [<a href="docs/README-CS.md">česky</a>] | [<a href="docs/README-ZH.md">中文</a>] | [<a href="docs/README-HU.md">Magyar</a>] | [<a href="docs/README-ES.md">Español</a>] | [<a href="docs/README-FA.md">فارسی</a>] | [<a href="docs/README-FR.md">Français</a>] | [<a href="docs/README-DE.md">Deutsch</a>] | [<a href="docs/README-PL.md">Polski</a>] | [<a href="docs/README-ID.md">Indonesian</a>] | [<a href="docs/README-FI.md">Suomi</a>] | [<a href="docs/README-ML.md">മലയാളം</a>] | [<a href="docs/README-JP.md">日本語</a>] | [<a href="docs/README-NL.md">Nederlands</a>] | [<a href="docs/README-IT.md">Italiano</a>] | [<a href="docs/README-RU.md">Русский</a>] | [<a href="docs/README-PTBR.md">Português (Brasil)</a>] | [<a href="docs/README-EO.md">Esperanto</a>] | [<a href="docs/README-KR.md">한국어</a>] | [<a href="docs/README-AR.md">العربي</a>] | [<a href="docs/README-VN.md">Tiếng Việt</a>] | [<a href="docs/README-DA.md">Dansk</a>] | [<a href="docs/README-GR.md">Ελληνικά</a>]<br>
-  <b>README, <a href="https://github.com/rustdesk/rustdesk/tree/master/src/lang">RustDesk UI</a> ve <a href="https://github.com/rustdesk/doc.rustdesk.com">RustDesk Belge</a>'sini ana dilinize çevirmemiz için yardımınıza ihtiyacımız var</b>
+  <b>README, <a href="https://github.com/mostafarezaei/rima/tree/master/src/lang">RustDesk UI</a> ve <a href="https://github.com/rustdesk/doc.rustdesk.com">RustDesk Belge</a>'sini ana dilinize çevirmemiz için yardımınıza ihtiyacımız var</b>
 </p>
 
 Bizimle sohbet edin: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/rustdesk) | [Reddit](https://www.reddit.com/r/rustdesk)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-Başka bir uzak masaüstü yazılımı daha, Rust dilinde yazılmış. Hemen kullanıma hazır, hiçbir yapılandırma gerektirmez. Verilerinizin tam kontrolünü elinizde tutarsınız ve güvenlikle ilgili endişeleriniz olmaz. Kendi buluş/iletme sunucumuzu kullanabilirsiniz, [kendi sunucunuzu kurabilirsiniz](https://rustdesk.com/server) veya [kendi buluş/iletme sunucunuzu yazabilirsiniz](https://github.com/rustdesk/rustdesk-server-demo).
+Başka bir uzak masaüstü yazılımı daha, Rust dilinde yazılmış. Hemen kullanıma hazır, hiçbir yapılandırma gerektirmez. Verilerinizin tam kontrolünü elinizde tutarsınız ve güvenlikle ilgili endişeleriniz olmaz. Kendi buluş/iletme sunucumuzu kullanabilirsiniz, [kendi sunucunuzu kurabilirsiniz](https://rustdesk.com/server) veya [kendi buluş/iletme sunucunuzu yazabilirsiniz](https://github.com/mostafarezaei/rima-server-demo).
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
 RustDesk, herkesten katkıyı kabul eder. Başlamak için [CONTRIBUTING.md](docs/CONTRIBUTING-TR.md) belgesine göz atın.
 
-[**SSS**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
+[**SSS**](https://github.com/mostafarezaei/rima/wiki/FAQ)
 
-[**BİNARİ İNDİR**](https://github.com/rustdesk/rustdesk/releases)
+[**BİNARİ İNDİR**](https://github.com/mostafarezaei/rima/releases)
 
-[**NİGHTLY DERLEME**](https://github.com/rustdesk/rustdesk/releases/tag/nightly)
+[**NİGHTLY DERLEME**](https://github.com/mostafarezaei/rima/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="F-Droid'de Alın"
@@ -41,7 +41,7 @@ Aşağıda ücretsiz olarak kullandığınız sunucular listelenmiştir, zaman i
 
 ## Geliştirici Konteyneri
 
-[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/rustdesk/rustdesk)
+[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Container&message=Open&color=blue&logo=visualstudiocode)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/mostafarezaei/rima)
 
 Eğer zaten VS Code ve Docker kurulu ise yukarıdaki rozete tıklayarak başlayabilirsiniz. Tıklamak, VS Code'un gerektiğinde Dev Konteyner eklentisini otomatik olarak yüklemesine, kaynak kodunu bir konteyner hacmine klonlamasına ve kullanım için bir geliştirici konteyneri başlatmasına neden olur.
 
@@ -130,7 +130,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -171,7 +171,7 @@ method return time=1662544486.931020 sender=:1.54 -> destination=:1.139 serial=2
 Öncelikle deposunu klonlayın ve Docker konteynerini oluşturun:
 
 ```sh
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 docker build -t "rustdesk-builder" .
 ```
@@ -200,16 +200,16 @@ Lütfen bu komutları RustDesk deposunun kökünden çalıştırdığınızdan e
  
 ## Dosya Yapısı
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: video kodlayıcı, yapılandırma, tcp/udp sarmalayıcı, protobuf, dosya transferi için fs işlevleri ve diğer bazı yardımcı işlevler
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: ekran yakalama
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: platforma özgü klavye/fare kontrolü
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: ses/pasta/klavye/video hizmetleri ve ağ bağlantıları
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: bir eş bağlantısı başlatır
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: [rustdesk-server](https://github.com/rustdesk/rustdesk-server) ile iletişim kurar, uzak doğrudan (TCP delik vurma) veya iletme bağlantısını bekler
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: platforma özgü kod
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: mobil için Flutter kodu
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: Flutter web istemcisi için JavaScript
+- **[libs/hbb_common](https://github.com/mostafarezaei/rima/tree/master/libs/hbb_common)**: video kodlayıcı, yapılandırma, tcp/udp sarmalayıcı, protobuf, dosya transferi için fs işlevleri ve diğer bazı yardımcı işlevler
+- **[libs/scrap](https://github.com/mostafarezaei/rima/tree/master/libs/scrap)**: ekran yakalama
+- **[libs/enigo](https://github.com/mostafarezaei/rima/tree/master/libs/enigo)**: platforma özgü klavye/fare kontrolü
+- **[src/ui](https://github.com/mostafarezaei/rima/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/mostafarezaei/rima/tree/master/src/server)**: ses/pasta/klavye/video hizmetleri ve ağ bağlantıları
+- **[src/client.rs](https://github.com/mostafarezaei/rima/tree/master/src/client.rs)**: bir eş bağlantısı başlatır
+- **[src/rendezvous_mediator.rs](https://github.com/mostafarezaei/rima/tree/master/src/rendezvous_mediator.rs)**: [rustdesk-server](https://github.com/mostafarezaei/rima-server) ile iletişim kurar, uzak doğrudan (TCP delik vurma) veya iletme bağlantısını bekler
+- **[src/platform](https://github.com/mostafarezaei/rima/tree/master/src/platform)**: platforma özgü kod
+- **[flutter](https://github.com/mostafarezaei/rima/tree/master/flutter)**: mobil için Flutter kodu
+- **[flutter/web/js](https://github.com/mostafarezaei/rima/tree/master/flutter/web/js)**: Flutter web istemcisi için JavaScript
 
 ## Ekran Görüntüleri
 

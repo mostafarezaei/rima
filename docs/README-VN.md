@@ -6,22 +6,22 @@
   <a href="#file-structure">Cấu trúc tệp tin</a> •
   <a href="#snapshot">Snapshot</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-GR.md">Ελληνικά</a>]<br>
-  <b>Chúng tôi cần sự gíup đỡ của bạn để dịch trang README này, <a href="https://github.com/rustdesk/rustdesk/tree/master/src/lang">RustDesk UI</a> và <a href="https://github.com/rustdesk/doc.rustdesk.com">tài liệu</a> sang ngôn ngữ bản địa của bạn</b>
+  <b>Chúng tôi cần sự gíup đỡ của bạn để dịch trang README này, <a href="https://github.com/mostafarezaei/rima/tree/master/src/lang">RustDesk UI</a> và <a href="https://github.com/rustdesk/doc.rustdesk.com">tài liệu</a> sang ngôn ngữ bản địa của bạn</b>
 </p>
 
 Chat với chúng tôi qua: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/rustdesk) | [Reddit](https://www.reddit.com/r/rustdesk)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/I2I04VU09)
 
-Một phần mềm điểu khiển máy tính từ xa, đuợc lập trình bằng ngôn ngữ Rust. Hoạt động tức thì, không cần phải cài đặt. Bạn có toàn quyền điểu khiển với dữ liệu của bạn mà không cần phải lo lắng về sự bảo mật. Bạn có thể sử dụng máy chủ rendezvous/relay của chúng tôi, [tự cài đặt máy chủ](https://rustdesk.com/server), hay thậm chí [tự tạo máy chủ rendezvous/relay](https://github.com/rustdesk/rustdesk-server-demo).
+Một phần mềm điểu khiển máy tính từ xa, đuợc lập trình bằng ngôn ngữ Rust. Hoạt động tức thì, không cần phải cài đặt. Bạn có toàn quyền điểu khiển với dữ liệu của bạn mà không cần phải lo lắng về sự bảo mật. Bạn có thể sử dụng máy chủ rendezvous/relay của chúng tôi, [tự cài đặt máy chủ](https://rustdesk.com/server), hay thậm chí [tự tạo máy chủ rendezvous/relay](https://github.com/mostafarezaei/rima-server-demo).
 
 ![image](https://user-images.githubusercontent.com/71636191/171661982-430285f0-2e12-4b1d-9957-4a58e375304d.png)
 
 Mọi người đều đuợc chào đón để đóng góp vào RustDesk. Để bắt đầu, hãy đọc [`docs/CONTRIBUTING.md`](CONTRIBUTING.md).
 
-[**RustDesk hoạt động như thế nào?**](https://github.com/rustdesk/rustdesk/wiki/How-does-RustDesk-work%3F)
+[**RustDesk hoạt động như thế nào?**](https://github.com/mostafarezaei/rima/wiki/How-does-RustDesk-work%3F)
 
-[**CÁC BẢN PHÂN PHÁT MÃ NHỊ PHÂN**](https://github.com/rustdesk/rustdesk/releases)
+[**CÁC BẢN PHÂN PHÁT MÃ NHỊ PHÂN**](https://github.com/mostafarezaei/rima/releases)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
@@ -108,7 +108,7 @@ cd
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 mkdir -p target/debug
 wget https://raw.githubusercontent.com/c-smile/sciter-sdk/master/bin.lnx/x64/libsciter-gtk.so
@@ -125,7 +125,7 @@ RustDesk hiện không hỗ trợ Wayland. Hãy xem [đường linh ở đây](h
 Bắt đầu bằng cách sao chép repo này về máy tính và build cái Docker cointainer:
 
 ```sh
-git clone https://github.com/rustdesk/rustdesk
+git clone https://github.com/mostafarezaei/rima
 cd rustdesk
 docker build -t "rustdesk-builder" .
 ```
@@ -152,16 +152,16 @@ Hãy đảm bảo là bạn đang chạy những lệnh này từ thu mục rễ
 
 ## Cấu trúc tệp tin
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: video codec, cấu hình, tcp/udp wrapper, protobuf, fs functions để truyền file, và một số hàm tiện ích khác
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: để ghi lại màn hình
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: để điều khiển máy tính/con chuột trên những nền tảng khác nhau
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: giao diện người dùng
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: các dịch vụ âm thanh, clipboard, đầu vào, video và các kết nối mạng
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: để bắt đầu kết nối với một peer
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: Để liên lạc với [rustdesk-server](https://github.com/rustdesk/rustdesk-server), đợi cho kết nối trực tiếp (TCP hole punching) hoặc kết nối được relayed.
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: mã nguồn riêng cho mỗi nền tảng
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: Mã Flutter dành cho điện thoại
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: Mã JavaScript dành cho giao diện trên web bằng Flutter
+- **[libs/hbb_common](https://github.com/mostafarezaei/rima/tree/master/libs/hbb_common)**: video codec, cấu hình, tcp/udp wrapper, protobuf, fs functions để truyền file, và một số hàm tiện ích khác
+- **[libs/scrap](https://github.com/mostafarezaei/rima/tree/master/libs/scrap)**: để ghi lại màn hình
+- **[libs/enigo](https://github.com/mostafarezaei/rima/tree/master/libs/enigo)**: để điều khiển máy tính/con chuột trên những nền tảng khác nhau
+- **[src/ui](https://github.com/mostafarezaei/rima/tree/master/src/ui)**: giao diện người dùng
+- **[src/server](https://github.com/mostafarezaei/rima/tree/master/src/server)**: các dịch vụ âm thanh, clipboard, đầu vào, video và các kết nối mạng
+- **[src/client.rs](https://github.com/mostafarezaei/rima/tree/master/src/client.rs)**: để bắt đầu kết nối với một peer
+- **[src/rendezvous_mediator.rs](https://github.com/mostafarezaei/rima/tree/master/src/rendezvous_mediator.rs)**: Để liên lạc với [rustdesk-server](https://github.com/mostafarezaei/rima-server), đợi cho kết nối trực tiếp (TCP hole punching) hoặc kết nối được relayed.
+- **[src/platform](https://github.com/mostafarezaei/rima/tree/master/src/platform)**: mã nguồn riêng cho mỗi nền tảng
+- **[flutter](https://github.com/mostafarezaei/rima/tree/master/flutter)**: Mã Flutter dành cho điện thoại
+- **[flutter/web/js](https://github.com/mostafarezaei/rima/tree/master/flutter/web/js)**: Mã JavaScript dành cho giao diện trên web bằng Flutter
 
 ## Snapshot
 
