@@ -1093,7 +1093,7 @@ class _NetworkState extends State<_Network> with AutomaticKeepAliveClientMixin {
 
       submit() async {
         bool result = await setServerConfig(
-            controllers,
+            null,
             errMsgs,
             ServerConfig(
                 idServer: idController.text,
