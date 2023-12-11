@@ -218,10 +218,6 @@ pub fn global_init() -> bool {
     //////////////////////////////// TEMPORAL CHANGES BY MOSTAFA
     //let v = String::from("123");
     //hbb_common::config::Config::set_permanent_password(&v);
-    hbb_common::config::Config::set_option(
-        "custom-rendezvous-server".into(),
-        "rima.3300.ir".into(),
-    );
     ////////////////////////////////
 
     #[cfg(target_os = "linux")]
